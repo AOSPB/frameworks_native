@@ -118,7 +118,6 @@ void GraphicBuffer::free_handle()
     mWrappedBuffer = 0;
 }
 
-#ifndef EGL_NEEDS_HANDLE
 
 status_t GraphicBuffer::initCheck() const {
     return static_cast<status_t>(mInitCheck);
